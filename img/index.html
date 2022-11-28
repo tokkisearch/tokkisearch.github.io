@@ -1,1 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Tokki: Images: </title>
+	<link rel="stylesheet" href="../style.css">
+	<link rel="icon" href="../favico.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" href="../touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="../touch-icon-ipad-retina.png">
+	<!-- Google / Search Engine Tags -->
+		<meta itemprop="name" content="Tokki Images: ">
+		<meta itemprop="description" content="The next gen search engine">
+		<meta itemprop="image" content="../favbanner.png">
+
+	<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="https://tokki.rf.gd">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Tokki Images: ">
+		<meta property="og:description" content="The next gen search engine">
+		<meta property="og:image" content="../favbanner.png">
+
+	<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Tokki Images: ">
+		<meta name="twitter:description" content="The next gen search engine">
+		<meta name="twitter:image" content="../favbanner.png">
+	<script src="../sugmgr.js"></script>
+	<script src="../keyword.js"></script>
+	<script src="../imgdb.js"></script>
+	<script src="../finder.js"></script>
+	<script src="../navmgr.js"></script>
+	<script>
+		keyword = '';
+		sug = [];
+		trends = [];
+		img = [];
+		loadimgdb();
+		loadsugdb()
+		loadtrendsdb();
+		setTimeout(() => {  
+				findkeyword();
+				dispimg(keyword);
+				clearimgdb();
+			}, 1000);
+	</script>
+</head>
+<body>
+	<center>
+	<div class="bg" role="bg">
+	</div>
+		<div class="content">
+			<div class="grid-main2">
+				<div class="grid-item">
+					<img src="../logo.png" onclick="window.location = '../'" width="128" height="66">
+					<br>
+					<form>
+						<input name="find" type="text" id="sugin" oninput="showsug2()" onclick="showtrends2()" style="display: inline-block;" autocomplete="off">
+						<button onclick="navweb()"  style="display: inline-block;">Find</button>
+						<div class="grid-searchbox2" id="sugbox">
+						<div class="grid-item" id="sugboxin">
+						
+						</div>
+					</div>
+					</form>
+					
+					</div>
+				</div>
+			
+				<div class="grid-tabs" onclick="killsug()">
+					<div class="grid-item">
+						<button onclick="navweb2()">Web</button>
+						<button class="activetab" onclick="navimg()">Images</button>
+						<button onclick="navvid()">Videos</button>
+						<button onclick="navnews()">News</button>
+					</div>
+				</div>
+			
+				<div class="grid-resultbox" onclick="killsug()">
+					<div class="grid-item" id="resultboxin">
+					
+					</div>
+				</div>
+				
+				<div class="grid-tabs" onclick="killsug()">
+					<div class="grid-item">
+						<p>&copy;2022 Tokki</p>
+					</div>
+				</div>
+		</div>
+</center>
+</body>
+</html>
 
