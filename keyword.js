@@ -1,21 +1,21 @@
 function findkeyword() {
 	cururl = window.location.toString();
-	keyword = cururl.replace('https://web.westfield.ma.edu/~darmstrong4810/tokki/web/?find=', ""); 
-	keyword = keyword.replace('https://web.westfield.ma.edu/~darmstrong4810/tokki/web', ""); 
-	keyword = keyword.replace('https://web.westfield.ma.edu/~darmstrong4810/tokki/img/?find=', ""); 
-	keyword = keyword.replace('https://web.westfield.ma.edu/~darmstrong4810/tokki/img', ""); 
-	keyword = keyword.replace('https://web.westfield.ma.edu/~darmstrong4810/tokki/vid/?find=', ""); 
-	keyword = keyword.replace('https://web.westfield.ma.edu/~darmstrong4810/tokki/vid', "");
-	keyword = keyword.replace('https://web.westfield.ma.edu/~darmstrong4810/tokki/news/?find=', ""); 
-	keyword = keyword.replace('https://web.westfield.ma.edu/~darmstrong4810/tokki/news', "");
+	keyword = cururl.replace('https://tokkisearch.github.io/web/?find=', ""); 
+	keyword = keyword.replace('https://tokkisearch.github.io/web', ""); 
+	keyword = keyword.replace('https://tokkisearch.github.io/img/?find=', ""); 
+	keyword = keyword.replace('https://tokkisearch.github.io/img', ""); 
+	keyword = keyword.replace('https://tokkisearch.github.io/vid/?find=', ""); 
+	keyword = keyword.replace('https://tokkisearch.github.io/vid', "");
+	keyword = keyword.replace('https://tokkisearch.github.io/news/?find=', ""); 
+	keyword = keyword.replace('https://tokkisearch.github.io/news', "");
 	keyword = keyword.toLowerCase();
 	keyword = keyword.replace(" ", "+")
-	sugin.value = cururl.replace('https://web.westfield.ma.edu/~darmstrong4810/tokki/web/?find=', "");
+	sugin.value = cururl.replace('https://tokkisearch.github.io/web/?find=', "");
 	sugin.value = sugin.value.replace('https://web.westfield.ma.edu/tokki/web', "");
-	sugin.value = sugin.value.replace('https://web.westfield.ma.edu/~darmstrong4810/tokki/img/?find=', ""); 
-	sugin.value = sugin.value.replace('https://web.westfield.ma.edu/~darmstrong4810/tokki/img', ""); 
-	sugin.value = sugin.value.replace('https://web.westfield.ma.edu/~darmstrong4810/tokki/vid/?find=', ""); 
-	sugin.value = sugin.value.replace('https://web.westfield.ma.edu/~darmstrong4810/tokki/vid', "");
-	sugin.value = sugin.value.replace('https://web.westfield.ma.edu/~darmstrong4810/tokki/news/?find=', ""); 
-	sugin.value = sugin.value.replace('https://web.westfield.ma.edu/~darmstrong4810/tokki/news', "");
+	sugin.value = sugin.value.replace('https://tokkisearch.github.io/img/?find=', ""); 
+	sugin.value = sugin.value.replace('https://tokkisearch.github.io/img', ""); 
+	sugin.value = sugin.value.replace('https://tokkisearch.github.io/vid/?find=', ""); 
+	sugin.value = sugin.value.replace('https://tokkisearch.github.io/vid', "");
+	sugin.value = sugin.value.replace('https://tokkisearch.github.io/news/?find=', ""); 
+	sugin.value = sugin.value.replace('https://tokkisearch.github.io/news', "");
 }
