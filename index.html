@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Tokki</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="favico.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+	<!-- Google / Search Engine Tags -->
+		<meta itemprop="name" content="Tokki">
+		<meta itemprop="description" content="The next gen search engine">
+		<meta itemprop="image" content="favbanner.png">
+
+	<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="https://tokki.rf.gd">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Tokki">
+		<meta property="og:description" content="The next gen search engine">
+		<meta property="og:image" content="favbanner.png">
+
+	<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Tokki">
+		<meta name="twitter:description" content="The next gen search engine">
+		<meta name="twitter:image" content="favbanner.png">
+	<script src="sugmgr.js"></script>
+	<script src="navmgr.js"></script>
+	<script>
+	sug = [];
+	trends = []
+	loadtrendsdb();
+	loadsugdb();
+	</script>
+</head>
+<body>
+	<center>
+	
+	
+	<div class="bg">
+	</div>
+		<div class="content">
+			<div class="grid-main">
+				<div class="grid-item">
+					<img src="logo.png" onclick="killsug()">
+					<br>
+					<form style="display: inline-block;">
+						<input name="searchfield" type="text" id="sugin" oninput="showsug()" onclick="showtrends()" style="display: inline-block;"  autocomplete="off">
+						<div class="grid-searchbox" id="sugbox">
+							<div class="grid-item" id="sugboxin">
+							
+							</div>
+						</div>
+					</form>
+					<button onclick="navweb()" onsubmit="navweb()"  style="display: inline-block;">Find</button>
+					<br>
+					<a href="advance/">Advance</a>
+					<a href="about/">About</a>
+					<a href="privacy/">Privacy</a>
+					<a href="language/">Language</a>
+				</div>
+			</div>
+		</div>
+</center>
+</body>
+</html>
+
