@@ -23,7 +23,8 @@ a {
 button {
 	font-family: main;
 	background-color: #ebeee7;
-	border: solid 1px #807f7b;
+	border: solid 0.5px #807f7b;
+	border-radius: 25px;
 	color: black;
 }
 
